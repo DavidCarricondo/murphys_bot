@@ -2,6 +2,7 @@ import pandas as pd
 import random
 import tweepy
 import os
+from pathlib import Path
 import dotenv
 
 dotenv.load_dotenv() 
@@ -22,6 +23,9 @@ def get_tweet(tweets_file, excluded_tweets=None):
         possible_tweets = [tweet for tweet in possible_tweets if tweet[:50] not in recent_tweets]
 
     selected_tweet = random.choice(possible_tweets)
+
+    while len(selected_tweet)>280:
+        selected_tweet = random.choice(possible_tweets)
 
     return selected_tweet
 
