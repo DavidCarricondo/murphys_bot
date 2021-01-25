@@ -1,5 +1,10 @@
 import pandas as pd
 import random
+import tweepy
+import os
+import dotenv
+
+dotenv.load_dotenv() 
 
 
 def get_tweet(tweets_file, excluded_tweets=None):
