@@ -1,5 +1,6 @@
 # Murphy's bot
-
+Want to get a Murphy's law once a day in your tweeter feed? This is your tweeter bot: [Murphys_kick](https://twitter.com/KickMurphys)<br>
+*Anything could have gone wrong, but this time it went right* :)
 ## What it is?
 This is a twitter bot that tweets daily one of the famous Murphy's laws. It is automated with **Python** and a **Lambda Function** in **AWS**. 
 
